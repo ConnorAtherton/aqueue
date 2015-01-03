@@ -1,0 +1,25 @@
+{
+  "name": "aqueue",
+  "version": "0.1.0",
+  "description": "Lightweight queue for async tasks",
+  "main": "src/aqueue.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "async",
+    "queue",
+    "control",
+    "flow"
+  ],
+  "author": "Connor Atherton",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "jshint-stylish": "^1.0.0"
+  }
+}
