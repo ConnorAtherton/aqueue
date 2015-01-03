@@ -66,7 +66,7 @@
       var args = [].slice.call(arguments);
       var fn = args.shift();
 
-      if (args.length !== 0 && fn && typeof fn === 'function') {
+      if (fn && typeof fn === 'function') {
         queue.push([fn, args]);
         run();
       }

@@ -19,27 +19,26 @@ var a = function(a, next) {
 
   console.log('* TESTING *', a);
   setTimeout(function() {
-    next(null, a);
+    next(null, 'happy');
   }, 100);
 }
 
-var b = function(a, b, next) {
+var b = function(b, next) {
   console.log('in b..');
-  assert.equal(a, 'test');
-  assert.equal(b, 'passed');
+  assert.equal(b, 'happy');
 
-  console.log('* TESTING *', a, b);
+  console.log('* TESTING *', b);
   setTimeout(function() {
-    next(null, a, b);
+    next(null, b);
   }, 500);
 }
 
-var c = function(a, b, c, d, next) {
+var c = function(a, b, c, next) {
   console.log('in c...');
-  assert.deepEqual("the test has passed".split(" "), [c, a, d, b]);
+  assert.deepEqual("the happy has".split(" "), [b, a, c]);
   next('error', 'Test', 'finished.');
   // next(null); => by default it won't repeat
 }
 
-queue(a, 'test')()(b, 'passed');
+queue(a, 'test')(b);
 queue(c, 'the', 'has');
