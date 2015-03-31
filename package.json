@@ -1,6 +1,6 @@
 {
   "name": "aqueue",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Lightweight queue for async tasks",
   "main": "src/aqueue.js",
   "scripts": {
