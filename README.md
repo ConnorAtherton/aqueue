@@ -1,4 +1,4 @@
-# Aqueue
+# Aqueue ![Build Status](https://api.travis-ci.org/ConnorAtherton/aqueue.svg)
 
 A lightweight queue for handling async operations.
 
