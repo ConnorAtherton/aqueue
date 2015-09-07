@@ -93,3 +93,30 @@
   return aqueue;
 
 }));
+
+/**
+ * Simpler Aqueue
+ */
+// var queue = (function() {
+//   var is_executing = false;
+//   var queue = [];
+//   function push(fn) {
+//     queue.push(fn);
+//     execute();
+//   }
+//   function execute() {
+//     if (is_executing) {
+//       return;
+//     }
+//     if (queue.length === 0) {
+//       return;
+//     }
+//     var fn = queue.shift();
+//     is_executing = true;
+//     fn(function() {
+//       is_executing = false;
+//       execute()
+//     });
+//   }
+//   return {push: push};
+// })();
